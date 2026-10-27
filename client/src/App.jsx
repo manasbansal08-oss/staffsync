@@ -2,10 +2,9 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './AuthContext.jsx';
 import Navbar from './components/Navbar.jsx';
 import Login from './pages/Login.jsx';
-<<<<<<< HEAD
+
 import Signup from './pages/Signup.jsx';
-=======
->>>>>>> 6d039a0ca1ca41a25886084f488f0831548c0a2b
+
 import Dashboard from './pages/Dashboard.jsx';
 import Employees from './pages/Employees.jsx';
 import Team from './pages/Team.jsx';
@@ -31,10 +30,9 @@ export default function App() {
       <main className="container py-4">
         <Routes>
           <Route path="/login" element={user ? <Navigate to="/" replace /> : <Login />} />
-<<<<<<< HEAD
+
           <Route path="/signup" element={user ? <Navigate to="/" replace /> : <Signup />} />
-=======
->>>>>>> 6d039a0ca1ca41a25886084f488f0831548c0a2b
+
           <Route path="/" element={<Protected><Dashboard /></Protected>} />
           <Route path="/employees" element={<Protected roles={['admin', 'hr']}><Employees /></Protected>} />
           <Route path="/team" element={<Protected roles={['manager']}><Team /></Protected>} />
