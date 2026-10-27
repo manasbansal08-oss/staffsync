@@ -1,10 +1,9 @@
 const router = require('express').Router();
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
-<<<<<<< HEAD
+
 const Employee = require('../models/Employee');
-=======
->>>>>>> 6d039a0ca1ca41a25886084f488f0831548c0a2b
+
 const { protect, asyncHandler } = require('../middleware/auth');
 
 const sign = (id) => jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '7d' });
@@ -26,7 +25,7 @@ router.post(
   })
 );
 
-<<<<<<< HEAD
+
 // Public self-signup: always creates a plain 'employee' account (+ employee record).
 // Roles, salary and reporting manager stay HR-controlled.
 router.post(
@@ -61,8 +60,6 @@ router.post(
   })
 );
 
-=======
->>>>>>> 6d039a0ca1ca41a25886084f488f0831548c0a2b
 router.get('/me', protect, (req, res) => {
   const u = req.user;
   res.json({ id: u._id, name: u.name, email: u.email, role: u.role, employee: u.employee });
