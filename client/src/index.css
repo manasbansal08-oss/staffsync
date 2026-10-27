@@ -1,0 +1,14 @@
+/* Small project-level tweaks on top of Bootstrap */
+:root { --bs-primary: #4f46e5; --bs-primary-rgb: 79, 70, 229; --bs-body-bg: #f4f5fa; }
+body { background: var(--bs-body-bg); }
+.btn-primary { --bs-btn-bg: #4f46e5; --bs-btn-border-color: #4f46e5; --bs-btn-hover-bg: #4338ca; --bs-btn-hover-border-color: #4338ca; --bs-btn-active-bg: #3730a3; --bs-btn-active-border-color: #3730a3; --bs-btn-disabled-bg: #4f46e5; --bs-btn-disabled-border-color: #4f46e5; }
+.btn-outline-primary { --bs-btn-color: #4f46e5; --bs-btn-border-color: #4f46e5; --bs-btn-hover-bg: #4f46e5; --bs-btn-hover-border-color: #4f46e5; --bs-btn-active-bg: #4f46e5; --bs-btn-active-border-color: #4f46e5; }
+.brand span, .login-brand span { color: #818cf8; }
+.login-brand span { color: #4f46e5; }
+.navbar .nav-link.active { background: rgba(255, 255, 255, .12); border-radius: .5rem; }
+.card { border: 1px solid #e5e7eb; border-radius: .75rem; }
+.stat-card b { font-size: 1.8rem; display: block; }
+.table > :not(caption) > * > * { padding: .75rem 1rem; vertical-align: middle; }
+.table thead th { font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: #6b7280; background: #f9fafb; }
+.pinned { border-left: 4px solid #4f46e5; }
+.login-wrap { min-height: 85vh; display: grid; place-items: center; }
