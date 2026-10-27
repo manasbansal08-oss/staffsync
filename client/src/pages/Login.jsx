@@ -1,8 +1,6 @@
 import { useState } from 'react';
-<<<<<<< HEAD
+
 import { Link } from 'react-router-dom';
-=======
->>>>>>> 6d039a0ca1ca41a25886084f488f0831548c0a2b
 import { useAuth } from '../AuthContext.jsx';
 import { errMsg } from '../api';
 import { Alert } from '../components/ui.jsx';
@@ -44,10 +42,9 @@ export default function Login() {
         <label className="form-label">Password</label>
         <input className="form-control mb-3" type="password" required value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
         <button className="btn btn-primary w-100" disabled={busy}>{busy ? 'Signing in...' : 'Sign in'}</button>
-<<<<<<< HEAD
+
         <p className="text-center small mt-3 mb-0">New here? <Link to="/signup">Create an account</Link></p>
-=======
->>>>>>> 6d039a0ca1ca41a25886084f488f0831548c0a2b
+
         <div className="bg-light rounded p-3 mt-4 small">
           <b>Demo logins</b> <span className="text-muted">(click to fill)</span>
           {demos.map(([role, email, password]) => (
